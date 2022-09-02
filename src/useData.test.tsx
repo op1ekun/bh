@@ -1,4 +1,4 @@
-import { renderHook } from '@testing-library/react';
+import { renderHook, waitFor } from '@testing-library/react';
 
 import {
     QueryType,
@@ -7,7 +7,7 @@ import {
 } from './useData';
 
 describe('useData', () => {
-    test('returns data for custom date range', () => {
+    test('returns data for custom date range', async () => {
         const query: IDataQuery = {
             queryString: '01/03/2022-03/03/2022',
             queryType: QueryType.RANGE
@@ -15,6 +15,8 @@ describe('useData', () => {
 
         const { result } = renderHook(() => useData(query));
 
-        expect(result.current).toHaveLength(3);
+        await waitFor(() => {
+            expect(result.current).toHaveLength(3);
+        });        
     });
 });
