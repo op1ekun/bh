@@ -25,7 +25,7 @@ describe('toSeries', () => {
         ];
     });
 
-    test('converts ohlc whole data to series', () => {
+    test('converts ohlc data to ohlc series', () => {
         const series = toSeries<IDataItemResult>(data, [ 'date', 'open', 'high', 'low', 'close' ]);
 
         expect(series).toStrictEqual([
@@ -38,7 +38,7 @@ describe('toSeries', () => {
         ]);
     });
 
-    test('converts ohlc to any series', () => {
+    test('converts ohlc data to any series', () => {
         const series = toSeries<IDataItemResult>(data, [ 'open', 'volume', 'date' ]);
 
         expect(series).toStrictEqual([

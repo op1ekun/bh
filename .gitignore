@@ -3,6 +3,7 @@ node_modules
 
 // artefacts
 build
+coverage
 
 // editor stuff
 .vscode
