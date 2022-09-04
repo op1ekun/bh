@@ -1,17 +1,21 @@
-import React from 'react';
 import {
     useState,
     useEffect,
 } from 'react';
+import { toTimestamp } from './utils/toTimestamp';
 import dataJson from './data/data.json';
 
-export interface IDataItem {
+interface IDataItem {
     date: string;
     open: number;
     high: number;
     low: number;
     close: number;
     volume: number;
+}
+
+export interface IDataItemResult extends Omit<IDataItem, 'date'> {
+    date: number;
 }
 
 export enum QueryType {
@@ -32,38 +36,37 @@ export interface IDataQuery {
     queryType: QueryType;
 }
 
-function toTimestamp(dateString: string): number {
-    const [ d, m, y ] = dateString.split('/');
-    return new Date(`${m}/${d}/${y}`).getTime();
-}
-
 export const useData = (query: IDataQuery) => {
-    const [ data, setData ] = useState<Array<IDataItem>>([]);
+    const [ data, setData ] = useState<Array<IDataItemResult>>([]);
 
     useEffect(() => {
-        if (query.queryType === QueryType.RANGE) {
+        if (query.queryType === QueryType.RANGE && query.queryString) {
             const [ left, right ] =
-                query?.queryString?.split('-')
+                query.queryString.split('-')
                     .map((border) => {
                         return border && toTimestamp(border)
-                    }) || [];
+                    });
     
-            const result: Array<IDataItem> = [];
-
+            // always async, simulates fetch request
             Promise.resolve(dataJson)
                 .then((responseData) => {
-                    dataJson.forEach((item: IDataItem) => {
-                        const timestamp = toTimestamp(item.date);
+                    const result: Array<IDataItemResult> = responseData
+                        .filter((item: IDataItem) => {
+                            const timestamp = toTimestamp(item.date);
 
-                        if (timestamp >= left && timestamp <= right) {
-                            result.push(item);
-                        }
-                    });
+                            if (timestamp >= left && timestamp <= right) {
+                                return true;
+                            }
+                        })
+                        .map((item: IDataItem) => ({
+                            ...item,
+                            date: toTimestamp(item.date)
+                        }));
 
                     setData(result);
                 });
         }
-    }, [ query, setData ]);
+    }, [ query.queryString, query.queryType ]);
 
     return data;
 };
