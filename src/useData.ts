@@ -51,17 +51,18 @@ export const useData = (query: IDataQuery) => {
             Promise.resolve(dataJson)
                 .then((responseData) => {
                     const result: Array<IDataItemResult> = responseData
-                        .filter((item: IDataItem) => {
-                            const timestamp = toTimestamp(item.date);
+                        .map((item: IDataItem) => ({
+                            ...item,
+                            date: toTimestamp(item.date)
+                        }))
+                        .filter((item: IDataItemResult) => {
+                            const timestamp = item.date;
 
                             if (timestamp >= left && timestamp <= right) {
                                 return true;
                             }
                         })
-                        .map((item: IDataItem) => ({
-                            ...item,
-                            date: toTimestamp(item.date)
-                        }));
+                        
 
                     setData(result);
                 });
