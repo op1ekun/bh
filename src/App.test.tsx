@@ -8,5 +8,3 @@ describe('App', () => {
         expect(getByText('BH Homework displaying chart for range: ""')).toBeInTheDocument();
     });
 });
-
-

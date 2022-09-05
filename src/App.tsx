@@ -9,6 +9,7 @@ import {
     QueryType
 } from './useData';
 import { StockChart } from './stockChart';
+import { toDateString } from './utils/toDateString';
 
 function App() {
     const [ query, setQuery ] = useState({
@@ -27,10 +28,14 @@ function App() {
     }
 
     const handleLeftRange = debounce(
-        (ev: ChangeEvent<HTMLInputElement>) => setLeftRange(ev.target.value), 400);
+        (ev: ChangeEvent<HTMLInputElement>) => {
+            setLeftRange(toDateString(ev.target.value))
+        }, 400);
 
     const handleRightRange = debounce(
-        (ev: ChangeEvent<HTMLInputElement>) => setRightRange(ev.target.value), 400);
+        (ev: ChangeEvent<HTMLInputElement>) => {
+            setRightRange(toDateString(ev.target.value))
+        }, 400);
 
     return (
         <div className="App">
@@ -41,18 +46,14 @@ function App() {
                 <div>
                     <form onSubmit={handleSubmit}>
                         <input
-                            type="text"
-                            placeholder="dd/mm/yyyy"
+                            type="date"
                             required={true}
                             onChange={(ev) => handleLeftRange(ev)}
-                            pattern={'[0-9]{2}/[0-9]{2}/[0-9]{4}'}
                         /> - 
                         <input
-                            type="text"
-                            placeholder="dd/mm/yyyy"
+                            type="date"
                             required={true}
                             onChange={(ev) => handleRightRange(ev)}
-                            pattern={'[0-9]{2}/[0-9]{2}/[0-9]{4}'}
                         />
                         <button type="submit">Fetch</button>
                     </form>
