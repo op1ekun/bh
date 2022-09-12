@@ -5,16 +5,13 @@ import {
 } from 'react';
 import { debounce } from 'lodash';
 import './App.css';
-import {
-    QueryType
-} from './useData';
 import { StockChart } from './stockChart';
 import { toDateString } from './utils/toDateString';
 
 function App() {
     const [ query, setQuery ] = useState({
-        queryType: QueryType.RANGE,
-        queryString: ''
+        leftRange: '',
+        rightRange: ''
     });
     const [ leftRange, setLeftRange ] = useState('');
     const [ rightRange, setRightRange ] = useState('');
@@ -22,8 +19,8 @@ function App() {
     function handleSubmit(ev: FormEvent<HTMLFormElement>) {
         ev.preventDefault();
         setQuery({
-            queryType: QueryType.RANGE,
-            queryString: `${leftRange}-${rightRange}`
+            leftRange,
+            rightRange
         });
     }
 
@@ -40,7 +37,7 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                {`BH Homework displaying chart for range: "${query.queryString}"`}
+                {`BH Homework displaying chart for range: "${leftRange}-${rightRange}"`}
             </header>
             <main>
                 <div>

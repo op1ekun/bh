@@ -18,56 +18,45 @@ export interface IDataItemResult extends Omit<IDataItem, 'date'> {
     date: number;
 }
 
-export enum QueryType {
-    'RANGE',
-    'YTD',
-    '1Y',
-    '2Y',
-    // '3Y',
-    // '6M',
-    // '3M',
-    // '1M',
-    // '5D',
-    // '1D'
+export interface IDataRangeQuery {
+    leftRange?: string;
+    rightRange?: string;
 }
 
-export interface IDataQuery {
-    queryString?: string;
-    queryType: QueryType;
-}
-
-export const useData = (query: IDataQuery) => {
+export const useData = (query: IDataRangeQuery): Array<IDataItemResult> => {
     const [ data, setData ] = useState<Array<IDataItemResult>>([]);
 
+    const { 
+        leftRange,
+        rightRange
+    } = query;
+
     useEffect(() => {
-        if (query.queryType === QueryType.RANGE && query.queryString) {
-            const [ left, right ] =
-                query.queryString.split('-')
-                    .map((border) => {
-                        return border && toTimestamp(border)
-                    });
-    
-            // always async, simulates fetch request
-            Promise.resolve(dataJson)
-                .then((responseData) => {
-                    const result: Array<IDataItemResult> = responseData
-                        .map((item: IDataItem) => ({
-                            ...item,
-                            date: toTimestamp(item.date)
-                        }))
-                        .filter((item: IDataItemResult) => {
-                            const timestamp = item.date;
+        if (!leftRange || !rightRange) return;
 
-                            if (timestamp >= left && timestamp <= right) {
-                                return true;
-                            }
-                        })
-                        
+        const left = toTimestamp(leftRange);
+        const right = toTimestamp(rightRange);
 
-                    setData(result);
-                });
-        }
-    }, [ query.queryString, query.queryType ]);
+        // always async, simulates fetch request
+        Promise.resolve(dataJson)
+            .then((responseData) => {
+                const result: Array<IDataItemResult> = responseData
+                    .map((item: IDataItem) => ({
+                        ...item,
+                        date: toTimestamp(item.date)
+                    }))
+                    .filter((item: IDataItemResult) => {
+                        const timestamp = item.date;
+
+                        if (timestamp >= left && timestamp <= right) {
+                            return true;
+                        }
+                    })
+                    
+
+                setData(result);
+            });
+    }, [ query.leftRange, query.rightRange ]);
 
     return data;
 };

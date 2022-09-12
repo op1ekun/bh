@@ -1,0 +1,1622 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App matches snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="App"
+      >
+        <header
+          class="App-header"
+        >
+          BH Homework displaying chart for range: "-"
+        </header>
+        <main>
+          <div>
+            <form>
+              <input
+                required=""
+                type="date"
+              />
+               -
+              <input
+                required=""
+                type="date"
+              />
+              <button
+                type="submit"
+              >
+                Fetch
+              </button>
+            </form>
+          </div>
+          <div
+            data-highcharts-chart="1"
+            style="overflow: hidden;"
+          >
+            <div
+              style="position: relative; height: 0px; z-index: 1;"
+            >
+              <select
+                style="position: absolute; width: 1px; height: 1px; padding: 0px; border: 0px; top: -9999em; cursor: pointer; opacity: 0.0001; margin-top: 0px;"
+              >
+                <option
+                  disabled=""
+                >
+                  Zoom
+                </option>
+                <option>
+                  View 1 month
+                </option>
+                <option>
+                  View 3 months
+                </option>
+                <option>
+                  View 6 months
+                </option>
+                <option>
+                  View year to date
+                </option>
+                <option>
+                  View 1 year
+                </option>
+                <option>
+                  View all
+                </option>
+              </select>
+              <input
+                class="highcharts-range-selector"
+                name="min"
+                style="position: absolute; border: 0px; box-shadow: 0 0 15px rgba(0,0,0,0.3); width: 1px; height: 1px; padding: 0px; text-align: center; font-size: 12px; font-family: \\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Arial, Helvetica, sans-serif; top: -9999em; color: rgb(51, 92, 173); cursor: pointer; margin-top: 0px;"
+                type="date"
+              />
+              <input
+                class="highcharts-range-selector"
+                name="max"
+                style="position: absolute; border: 0px; box-shadow: 0 0 15px rgba(0,0,0,0.3); width: 1px; height: 1px; padding: 0px; text-align: center; font-size: 12px; font-family: \\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Arial, Helvetica, sans-serif; top: -9999em; color: rgb(51, 92, 173); cursor: pointer; margin-top: 0px;"
+                type="date"
+              />
+            </div>
+            <div
+              class="highcharts-container "
+              dir="ltr"
+              id="highcharts-7"
+              style="position: relative; overflow: hidden; width: 600px; height: 400px; text-align: left; line-height: normal; z-index: 0; user-select: none; outline: none;"
+            >
+              <svg
+                aria-label="BH Stock Chart"
+                class="highcharts-root"
+                height="400"
+                role="img"
+                style="font-family: \\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Arial, Helvetica, sans-serif; font-size: 12px;"
+                version="1.1"
+                viewBox="0 0 600 400"
+                width="600"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <desc>
+                  Created with Highcharts 10.2.1
+                </desc>
+                <defs>
+                  <clippath
+                    id="highcharts-8-"
+                  >
+                    <rect
+                      fill="none"
+                      height="NaN"
+                      width="580"
+                      x="0"
+                      y="0"
+                    />
+                  </clippath>
+                  <clippath
+                    id="highcharts-9-"
+                  >
+                    <rect
+                      fill="none"
+                      height="NaN"
+                      width="580"
+                      x="0"
+                      y="0"
+                    />
+                  </clippath>
+                  <clippath
+                    id="highcharts-10-"
+                  >
+                    <rect
+                      fill="none"
+                      height="NaN"
+                      width="580"
+                      x="0"
+                      y="0"
+                    />
+                  </clippath>
+                  <clippath
+                    id="highcharts-11-"
+                  >
+                    <rect
+                      fill="none"
+                      height="40"
+                      width="552"
+                      x="0"
+                      y="0"
+                    />
+                  </clippath>
+                  <clippath
+                    id="highcharts-12-"
+                  >
+                    <rect
+                      class="highcharts-animating"
+                      fill="none"
+                      height="40"
+                      width="0"
+                      x="0"
+                      y="0"
+                    />
+                  </clippath>
+                  <clippath
+                    id="highcharts-13-"
+                  >
+                    <rect
+                      fill="none"
+                      height="400"
+                      width="99"
+                      x="-99"
+                      y="NaN"
+                    />
+                  </clippath>
+                </defs>
+                <rect
+                  class="highcharts-background"
+                  fill="#ffffff"
+                  height="400"
+                  rx="0"
+                  ry="0"
+                  width="600"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  class="highcharts-plot-background"
+                  fill="none"
+                  height="NaN"
+                  width="580"
+                  x="10"
+                  y="NaN"
+                />
+                <g
+                  class="highcharts-grid highcharts-xaxis-grid"
+                  data-z-index="1"
+                />
+                <g
+                  class="highcharts-grid highcharts-xaxis-grid highcharts-navigator-xaxis"
+                  data-z-index="1"
+                />
+                <g
+                  class="highcharts-grid highcharts-yaxis-grid"
+                  data-z-index="1"
+                />
+                <g
+                  class="highcharts-grid highcharts-yaxis-grid"
+                  data-z-index="1"
+                />
+                <g
+                  class="highcharts-grid highcharts-yaxis-grid highcharts-navigator-yaxis"
+                  data-z-index="1"
+                />
+                <rect
+                  class="highcharts-plot-border"
+                  data-z-index="1"
+                  fill="none"
+                  height="0"
+                  width="580"
+                  x="10"
+                  y="0"
+                />
+                <g
+                  class="highcharts-axis highcharts-xaxis"
+                  data-z-index="2"
+                >
+                  <path
+                    class="highcharts-axis-line"
+                    d="M 0 0"
+                    data-z-index="7"
+                    fill="none"
+                    stroke="#ccd6eb"
+                    stroke-width="1"
+                  />
+                </g>
+                <g
+                  class="highcharts-axis highcharts-xaxis highcharts-navigator-xaxis"
+                  data-z-index="2"
+                >
+                  <path
+                    class="highcharts-axis-line"
+                    d="M 0 0"
+                    data-z-index="7"
+                    fill="none"
+                  />
+                </g>
+                <g
+                  class="highcharts-axis highcharts-yaxis"
+                  data-z-index="2"
+                >
+                  <path
+                    class="highcharts-axis-line"
+                    d="M 0 0"
+                    data-z-index="7"
+                    fill="none"
+                  />
+                </g>
+                <g
+                  class="highcharts-axis highcharts-yaxis"
+                  data-z-index="2"
+                >
+                  <path
+                    class="highcharts-axis-line"
+                    d="M 0 0"
+                    data-z-index="7"
+                    fill="none"
+                  />
+                </g>
+                <g
+                  class="highcharts-axis highcharts-yaxis highcharts-navigator-yaxis"
+                  data-z-index="2"
+                >
+                  <path
+                    class="highcharts-axis-line"
+                    d="M 0 0"
+                    data-z-index="7"
+                    fill="none"
+                  />
+                </g>
+                <g
+                  class="highcharts-scrollbar"
+                  data-z-index="3"
+                  visibility="hidden"
+                >
+                  <rect
+                    class="highcharts-scrollbar-track"
+                    fill="#f2f2f2"
+                    height="14"
+                    rx="0"
+                    ry="0"
+                    stroke="#f2f2f2"
+                    stroke-width="1"
+                    width="14"
+                    x="0"
+                    y="-0.5"
+                  />
+                  <g
+                    transform="translate(-0.5,-0.5)"
+                  >
+                    <rect
+                      class="highcharts-scrollbar-thumb"
+                      fill="#cccccc"
+                      height="14"
+                      rx="0"
+                      ry="0"
+                      stroke="#cccccc"
+                      stroke-width="1"
+                      width="14"
+                    />
+                    <path
+                      class="highcharts-scrollbar-rifles"
+                      d="M -3 3.5 L -3 9.333333333333334 M 0 3.5 L 0 9.333333333333334 M 3 3.5 L 3 9.333333333333334"
+                      fill="none"
+                      stroke="#333333"
+                      stroke-width="1"
+                    />
+                  </g>
+                  <g>
+                    <rect
+                      class="highcharts-scrollbar-button"
+                      fill="#e6e6e6"
+                      height="14"
+                      rx="0"
+                      ry="0"
+                      stroke="#cccccc"
+                      stroke-width="1"
+                      width="14"
+                      x="-0.5"
+                      y="-0.5"
+                    />
+                    <path
+                      class="highcharts-scrollbar-arrow"
+                      d="M 8 4 L 8 10 L 5 7"
+                      fill="#333333"
+                    />
+                  </g>
+                  <g>
+                    <rect
+                      class="highcharts-scrollbar-button"
+                      fill="#e6e6e6"
+                      height="14"
+                      rx="0"
+                      ry="0"
+                      stroke="#cccccc"
+                      stroke-width="1"
+                      width="14"
+                      x="-0.5"
+                      y="-0.5"
+                    />
+                    <path
+                      class="highcharts-scrollbar-arrow"
+                      d="M 6 4 L 6 10 L 9 7"
+                      fill="#333333"
+                    />
+                  </g>
+                </g>
+                <g
+                  class="highcharts-series-group"
+                  data-z-index="3"
+                >
+                  <g
+                    class="highcharts-series highcharts-series-0 highcharts-ohlc-series highcharts-color-0 highcharts-tracker"
+                    clip-path="url(#highcharts-9-)"
+                    data-z-index="0.1"
+                    opacity="1"
+                    transform="translate(10,0) scale(1 1)"
+                  />
+                  <g
+                    class="highcharts-markers highcharts-series-0 highcharts-ohlc-series highcharts-color-0"
+                    clip-path="none"
+                    data-z-index="0.1"
+                    opacity="1"
+                    transform="translate(10,0) scale(1 1)"
+                  />
+                  <g
+                    class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-color-1 highcharts-tracker"
+                    clip-path="url(#highcharts-10-)"
+                    data-z-index="0.1"
+                    opacity="1"
+                    transform="translate(10,0) scale(1 0.001)"
+                  />
+                  <g
+                    class="highcharts-markers highcharts-series-1 highcharts-column-series highcharts-color-1"
+                    clip-path="none"
+                    data-z-index="0.1"
+                    opacity="1"
+                    transform="translate(10,0) scale(1 1)"
+                  />
+                  <g
+                    class="highcharts-series highcharts-series-2 highcharts-areaspline-series highcharts-navigator-series"
+                    clip-path="url(#highcharts-12-)"
+                    data-z-index="0.1"
+                    opacity="1"
+                    transform="translate(24,0) scale(1 1)"
+                  >
+                    <path
+                      class="highcharts-area"
+                      d="M 0 0"
+                      data-z-index="0"
+                      fill="rgba(124,181,236,0.05)"
+                    />
+                  </g>
+                  <g
+                    class="highcharts-markers highcharts-series-2 highcharts-areaspline-series highcharts-navigator-series"
+                    clip-path="url(#highcharts-13-)"
+                    data-z-index="0.1"
+                    opacity="1"
+                    transform="translate(24,0) scale(1 1)"
+                  />
+                </g>
+                <text
+                  class="highcharts-title"
+                  data-z-index="4"
+                  style="color: rgb(51, 51, 51); font-size: 16px; fill: #333333;"
+                  text-anchor="middle"
+                  x="300"
+                  y="22"
+                >
+                  BH Stock Chart
+                </text>
+                <text
+                  class="highcharts-subtitle"
+                  data-z-index="4"
+                  style="color: rgb(102, 102, 102); fill: #666666;"
+                  text-anchor="middle"
+                  x="300"
+                  y="10"
+                />
+                <text
+                  class="highcharts-caption"
+                  data-z-index="4"
+                  style="color: rgb(102, 102, 102); fill: #666666;"
+                  text-anchor="start"
+                  x="10"
+                  y="397"
+                />
+                <g
+                  class="highcharts-data-labels highcharts-series-2 highcharts-areaspline-series highcharts-navigator-series"
+                  data-z-index="6"
+                  opacity="1"
+                  transform="translate(24,0) scale(1 1)"
+                />
+                <g
+                  class="highcharts-axis-labels highcharts-xaxis-labels"
+                  data-z-index="7"
+                />
+                <g
+                  class="highcharts-axis-labels highcharts-xaxis-labels highcharts-navigator-xaxis"
+                  data-z-index="7"
+                />
+                <g
+                  class="highcharts-axis-labels highcharts-yaxis-labels"
+                  data-z-index="7"
+                />
+                <g
+                  class="highcharts-axis-labels highcharts-yaxis-labels"
+                  data-z-index="7"
+                />
+                <g
+                  class="highcharts-axis-labels highcharts-yaxis-labels highcharts-navigator-yaxis"
+                  data-z-index="7"
+                />
+                <g
+                  class="highcharts-range-selector-group"
+                  data-z-index="7"
+                  transform="translate(0,0)"
+                >
+                  <g
+                    class="highcharts-range-selector-buttons"
+                    transform="translate(0,10)"
+                  >
+                    <g
+                      class="highcharts-label"
+                      transform="translate(10,0)"
+                    >
+                      <text
+                        data-z-index="1"
+                        style="color: rgb(102, 102, 102); fill: #666666;"
+                        x="0"
+                        y="15.5"
+                      >
+                        Zoom
+                      </text>
+                    </g>
+                    <g
+                      class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
+                      data-z-index="7"
+                      style="cursor: pointer;"
+                      transform="translate(15,0)"
+                    >
+                      <title>
+                        View 1 month
+                      </title>
+                      <rect
+                        class="highcharts-button-box"
+                        fill="#f7f7f7"
+                        height="22"
+                        rx="2"
+                        ry="2"
+                        width="32"
+                        x="0"
+                        y="0"
+                      />
+                      <text
+                        data-z-index="1"
+                        style="color: rgb(51, 51, 51); font-weight: normal; fill: #333333;"
+                        x="NaN"
+                        y="15.5"
+                      >
+                        1m
+                      </text>
+                    </g>
+                    <g
+                      class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
+                      data-z-index="7"
+                      style="cursor: pointer;"
+                      transform="translate(52,0)"
+                    >
+                      <title>
+                        View 3 months
+                      </title>
+                      <rect
+                        class="highcharts-button-box"
+                        fill="#f7f7f7"
+                        height="22"
+                        rx="2"
+                        ry="2"
+                        width="32"
+                        x="0"
+                        y="0"
+                      />
+                      <text
+                        data-z-index="1"
+                        style="color: rgb(51, 51, 51); font-weight: normal; fill: #333333;"
+                        x="NaN"
+                        y="15.5"
+                      >
+                        3m
+                      </text>
+                    </g>
+                    <g
+                      class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
+                      data-z-index="7"
+                      style="cursor: pointer;"
+                      transform="translate(89,0)"
+                    >
+                      <title>
+                        View 6 months
+                      </title>
+                      <rect
+                        class="highcharts-button-box"
+                        fill="#f7f7f7"
+                        height="22"
+                        rx="2"
+                        ry="2"
+                        width="32"
+                        x="0"
+                        y="0"
+                      />
+                      <text
+                        data-z-index="1"
+                        style="color: rgb(51, 51, 51); font-weight: normal; fill: #333333;"
+                        x="NaN"
+                        y="15.5"
+                      >
+                        6m
+                      </text>
+                    </g>
+                    <g
+                      class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
+                      data-z-index="7"
+                      style="cursor: pointer;"
+                      transform="translate(126,0)"
+                    >
+                      <title>
+                        View year to date
+                      </title>
+                      <rect
+                        class="highcharts-button-box"
+                        fill="#f7f7f7"
+                        height="22"
+                        rx="2"
+                        ry="2"
+                        width="32"
+                        x="0"
+                        y="0"
+                      />
+                      <text
+                        data-z-index="1"
+                        style="color: rgb(51, 51, 51); font-weight: normal; fill: #333333;"
+                        x="NaN"
+                        y="15.5"
+                      >
+                        YTD
+                      </text>
+                    </g>
+                    <g
+                      class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
+                      data-z-index="7"
+                      style="cursor: pointer;"
+                      transform="translate(163,0)"
+                    >
+                      <title>
+                        View 1 year
+                      </title>
+                      <rect
+                        class="highcharts-button-box"
+                        fill="#f7f7f7"
+                        height="22"
+                        rx="2"
+                        ry="2"
+                        width="32"
+                        x="0"
+                        y="0"
+                      />
+                      <text
+                        data-z-index="1"
+                        style="color: rgb(51, 51, 51); font-weight: normal; fill: #333333;"
+                        x="NaN"
+                        y="15.5"
+                      >
+                        1y
+                      </text>
+                    </g>
+                    <g
+                      class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
+                      data-z-index="7"
+                      style="cursor: pointer;"
+                      transform="translate(200,0)"
+                    >
+                      <title>
+                        View all
+                      </title>
+                      <rect
+                        class="highcharts-button-box"
+                        fill="#f7f7f7"
+                        height="22"
+                        rx="2"
+                        ry="2"
+                        width="32"
+                        x="0"
+                        y="0"
+                      />
+                      <text
+                        data-z-index="1"
+                        style="color: rgb(51, 51, 51); font-weight: normal; fill: #333333;"
+                        x="NaN"
+                        y="15.5"
+                      >
+                        All
+                      </text>
+                    </g>
+                  </g>
+                  <g
+                    class="highcharts-input-group"
+                    transform="translate(588,10)"
+                  >
+                    <g
+                      class="highcharts-label highcharts-range-label"
+                      transform="translate(0,0)"
+                    >
+                      <text
+                        data-z-index="1"
+                        style="color: rgb(102, 102, 102); font-family: \\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Arial, Helvetica, sans-serif; font-size: 12px; fill: #666666;"
+                        x="0"
+                        y="12"
+                      >
+                        
+                      </text>
+                    </g>
+                    <g
+                      class="highcharts-label highcharts-range-input"
+                      style="cursor: pointer;"
+                      transform="translate(0,0)"
+                    >
+                      <rect
+                        class="highcharts-label-box"
+                        fill="none"
+                        height="21"
+                        stroke="none"
+                        stroke-width="1"
+                        width="4"
+                        x="0.5"
+                        y="0.5"
+                      />
+                      <text
+                        data-z-index="1"
+                        style="color: rgb(51, 92, 173); font-family: \\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Arial, Helvetica, sans-serif; font-size: 12px; fill: #335cad;"
+                        x="2"
+                        y="15"
+                      >
+                        
+                      </text>
+                    </g>
+                    <g
+                      class="highcharts-label highcharts-range-label"
+                      transform="translate(9,0)"
+                    >
+                      <text
+                        data-z-index="1"
+                        style="color: rgb(102, 102, 102); font-family: \\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Arial, Helvetica, sans-serif; font-size: 12px; fill: #666666;"
+                        x="2"
+                        y="15"
+                      >
+                        →
+                      </text>
+                    </g>
+                    <g
+                      class="highcharts-label highcharts-range-input"
+                      style="cursor: pointer;"
+                      transform="translate(18,0)"
+                    >
+                      <rect
+                        class="highcharts-label-box"
+                        fill="none"
+                        height="21"
+                        stroke="none"
+                        stroke-width="1"
+                        width="4"
+                        x="0.5"
+                        y="0.5"
+                      />
+                      <text
+                        data-z-index="1"
+                        style="color: rgb(51, 92, 173); font-family: \\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Arial, Helvetica, sans-serif; font-size: 12px; fill: #335cad;"
+                        x="2"
+                        y="15"
+                      >
+                        
+                      </text>
+                    </g>
+                  </g>
+                </g>
+                <g
+                  class="highcharts-navigator"
+                  data-z-index="8"
+                  visibility="hidden"
+                >
+                  <rect
+                    class="highcharts-navigator-mask-outside"
+                    fill="rgba(0,0,0,0)"
+                  />
+                  <rect
+                    class="highcharts-navigator-mask-inside"
+                    fill="rgba(102,133,194,0.3)"
+                    style="cursor: ew-resize;"
+                  />
+                  <rect
+                    class="highcharts-navigator-mask-outside"
+                    fill="rgba(0,0,0,0)"
+                  />
+                  <path
+                    class="highcharts-navigator-outline"
+                    fill="none"
+                    stroke="#cccccc"
+                    stroke-width="1"
+                  />
+                  <path
+                    class="highcharts-navigator-handle highcharts-navigator-handle-right"
+                    d="M -4.5 0.5 L 3.5 0.5 L 3.5 15.5 L -4.5 15.5 L -4.5 0.5 M -1.5 4 L -1.5 12 M 0.5 4 L 0.5 12"
+                    data-z-index="6"
+                    fill="#f2f2f2"
+                    stroke="#999999"
+                    stroke-width="1"
+                    style="cursor: ew-resize;"
+                  />
+                  <path
+                    class="highcharts-navigator-handle highcharts-navigator-handle-left"
+                    d="M -4.5 0.5 L 3.5 0.5 L 3.5 15.5 L -4.5 15.5 L -4.5 0.5 M -1.5 4 L -1.5 12 M 0.5 4 L 0.5 12"
+                    data-z-index="7"
+                    fill="#f2f2f2"
+                    stroke="#999999"
+                    stroke-width="1"
+                    style="cursor: ew-resize;"
+                  />
+                </g>
+                <text
+                  class="highcharts-credits"
+                  data-z-index="8"
+                  style="cursor: pointer; color: rgb(153, 153, 153); font-size: 9px; fill: #999999;"
+                  text-anchor="end"
+                  x="590"
+                  y="395"
+                >
+                  Highcharts.com
+                </text>
+              </svg>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="App"
+    >
+      <header
+        class="App-header"
+      >
+        BH Homework displaying chart for range: "-"
+      </header>
+      <main>
+        <div>
+          <form>
+            <input
+              required=""
+              type="date"
+            />
+             -
+            <input
+              required=""
+              type="date"
+            />
+            <button
+              type="submit"
+            >
+              Fetch
+            </button>
+          </form>
+        </div>
+        <div
+          data-highcharts-chart="1"
+          style="overflow: hidden;"
+        >
+          <div
+            style="position: relative; height: 0px; z-index: 1;"
+          >
+            <select
+              style="position: absolute; width: 1px; height: 1px; padding: 0px; border: 0px; top: -9999em; cursor: pointer; opacity: 0.0001; margin-top: 0px;"
+            >
+              <option
+                disabled=""
+              >
+                Zoom
+              </option>
+              <option>
+                View 1 month
+              </option>
+              <option>
+                View 3 months
+              </option>
+              <option>
+                View 6 months
+              </option>
+              <option>
+                View year to date
+              </option>
+              <option>
+                View 1 year
+              </option>
+              <option>
+                View all
+              </option>
+            </select>
+            <input
+              class="highcharts-range-selector"
+              name="min"
+              style="position: absolute; border: 0px; box-shadow: 0 0 15px rgba(0,0,0,0.3); width: 1px; height: 1px; padding: 0px; text-align: center; font-size: 12px; font-family: \\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Arial, Helvetica, sans-serif; top: -9999em; color: rgb(51, 92, 173); cursor: pointer; margin-top: 0px;"
+              type="date"
+            />
+            <input
+              class="highcharts-range-selector"
+              name="max"
+              style="position: absolute; border: 0px; box-shadow: 0 0 15px rgba(0,0,0,0.3); width: 1px; height: 1px; padding: 0px; text-align: center; font-size: 12px; font-family: \\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Arial, Helvetica, sans-serif; top: -9999em; color: rgb(51, 92, 173); cursor: pointer; margin-top: 0px;"
+              type="date"
+            />
+          </div>
+          <div
+            class="highcharts-container "
+            dir="ltr"
+            id="highcharts-7"
+            style="position: relative; overflow: hidden; width: 600px; height: 400px; text-align: left; line-height: normal; z-index: 0; user-select: none; outline: none;"
+          >
+            <svg
+              aria-label="BH Stock Chart"
+              class="highcharts-root"
+              height="400"
+              role="img"
+              style="font-family: \\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Arial, Helvetica, sans-serif; font-size: 12px;"
+              version="1.1"
+              viewBox="0 0 600 400"
+              width="600"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <desc>
+                Created with Highcharts 10.2.1
+              </desc>
+              <defs>
+                <clippath
+                  id="highcharts-8-"
+                >
+                  <rect
+                    fill="none"
+                    height="NaN"
+                    width="580"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <clippath
+                  id="highcharts-9-"
+                >
+                  <rect
+                    fill="none"
+                    height="NaN"
+                    width="580"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <clippath
+                  id="highcharts-10-"
+                >
+                  <rect
+                    fill="none"
+                    height="NaN"
+                    width="580"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <clippath
+                  id="highcharts-11-"
+                >
+                  <rect
+                    fill="none"
+                    height="40"
+                    width="552"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <clippath
+                  id="highcharts-12-"
+                >
+                  <rect
+                    class="highcharts-animating"
+                    fill="none"
+                    height="40"
+                    width="0"
+                    x="0"
+                    y="0"
+                  />
+                </clippath>
+                <clippath
+                  id="highcharts-13-"
+                >
+                  <rect
+                    fill="none"
+                    height="400"
+                    width="99"
+                    x="-99"
+                    y="NaN"
+                  />
+                </clippath>
+              </defs>
+              <rect
+                class="highcharts-background"
+                fill="#ffffff"
+                height="400"
+                rx="0"
+                ry="0"
+                width="600"
+                x="0"
+                y="0"
+              />
+              <rect
+                class="highcharts-plot-background"
+                fill="none"
+                height="NaN"
+                width="580"
+                x="10"
+                y="NaN"
+              />
+              <g
+                class="highcharts-grid highcharts-xaxis-grid"
+                data-z-index="1"
+              />
+              <g
+                class="highcharts-grid highcharts-xaxis-grid highcharts-navigator-xaxis"
+                data-z-index="1"
+              />
+              <g
+                class="highcharts-grid highcharts-yaxis-grid"
+                data-z-index="1"
+              />
+              <g
+                class="highcharts-grid highcharts-yaxis-grid"
+                data-z-index="1"
+              />
+              <g
+                class="highcharts-grid highcharts-yaxis-grid highcharts-navigator-yaxis"
+                data-z-index="1"
+              />
+              <rect
+                class="highcharts-plot-border"
+                data-z-index="1"
+                fill="none"
+                height="0"
+                width="580"
+                x="10"
+                y="0"
+              />
+              <g
+                class="highcharts-axis highcharts-xaxis"
+                data-z-index="2"
+              >
+                <path
+                  class="highcharts-axis-line"
+                  d="M 0 0"
+                  data-z-index="7"
+                  fill="none"
+                  stroke="#ccd6eb"
+                  stroke-width="1"
+                />
+              </g>
+              <g
+                class="highcharts-axis highcharts-xaxis highcharts-navigator-xaxis"
+                data-z-index="2"
+              >
+                <path
+                  class="highcharts-axis-line"
+                  d="M 0 0"
+                  data-z-index="7"
+                  fill="none"
+                />
+              </g>
+              <g
+                class="highcharts-axis highcharts-yaxis"
+                data-z-index="2"
+              >
+                <path
+                  class="highcharts-axis-line"
+                  d="M 0 0"
+                  data-z-index="7"
+                  fill="none"
+                />
+              </g>
+              <g
+                class="highcharts-axis highcharts-yaxis"
+                data-z-index="2"
+              >
+                <path
+                  class="highcharts-axis-line"
+                  d="M 0 0"
+                  data-z-index="7"
+                  fill="none"
+                />
+              </g>
+              <g
+                class="highcharts-axis highcharts-yaxis highcharts-navigator-yaxis"
+                data-z-index="2"
+              >
+                <path
+                  class="highcharts-axis-line"
+                  d="M 0 0"
+                  data-z-index="7"
+                  fill="none"
+                />
+              </g>
+              <g
+                class="highcharts-scrollbar"
+                data-z-index="3"
+                visibility="hidden"
+              >
+                <rect
+                  class="highcharts-scrollbar-track"
+                  fill="#f2f2f2"
+                  height="14"
+                  rx="0"
+                  ry="0"
+                  stroke="#f2f2f2"
+                  stroke-width="1"
+                  width="14"
+                  x="0"
+                  y="-0.5"
+                />
+                <g
+                  transform="translate(-0.5,-0.5)"
+                >
+                  <rect
+                    class="highcharts-scrollbar-thumb"
+                    fill="#cccccc"
+                    height="14"
+                    rx="0"
+                    ry="0"
+                    stroke="#cccccc"
+                    stroke-width="1"
+                    width="14"
+                  />
+                  <path
+                    class="highcharts-scrollbar-rifles"
+                    d="M -3 3.5 L -3 9.333333333333334 M 0 3.5 L 0 9.333333333333334 M 3 3.5 L 3 9.333333333333334"
+                    fill="none"
+                    stroke="#333333"
+                    stroke-width="1"
+                  />
+                </g>
+                <g>
+                  <rect
+                    class="highcharts-scrollbar-button"
+                    fill="#e6e6e6"
+                    height="14"
+                    rx="0"
+                    ry="0"
+                    stroke="#cccccc"
+                    stroke-width="1"
+                    width="14"
+                    x="-0.5"
+                    y="-0.5"
+                  />
+                  <path
+                    class="highcharts-scrollbar-arrow"
+                    d="M 8 4 L 8 10 L 5 7"
+                    fill="#333333"
+                  />
+                </g>
+                <g>
+                  <rect
+                    class="highcharts-scrollbar-button"
+                    fill="#e6e6e6"
+                    height="14"
+                    rx="0"
+                    ry="0"
+                    stroke="#cccccc"
+                    stroke-width="1"
+                    width="14"
+                    x="-0.5"
+                    y="-0.5"
+                  />
+                  <path
+                    class="highcharts-scrollbar-arrow"
+                    d="M 6 4 L 6 10 L 9 7"
+                    fill="#333333"
+                  />
+                </g>
+              </g>
+              <g
+                class="highcharts-series-group"
+                data-z-index="3"
+              >
+                <g
+                  class="highcharts-series highcharts-series-0 highcharts-ohlc-series highcharts-color-0 highcharts-tracker"
+                  clip-path="url(#highcharts-9-)"
+                  data-z-index="0.1"
+                  opacity="1"
+                  transform="translate(10,0) scale(1 1)"
+                />
+                <g
+                  class="highcharts-markers highcharts-series-0 highcharts-ohlc-series highcharts-color-0"
+                  clip-path="none"
+                  data-z-index="0.1"
+                  opacity="1"
+                  transform="translate(10,0) scale(1 1)"
+                />
+                <g
+                  class="highcharts-series highcharts-series-1 highcharts-column-series highcharts-color-1 highcharts-tracker"
+                  clip-path="url(#highcharts-10-)"
+                  data-z-index="0.1"
+                  opacity="1"
+                  transform="translate(10,0) scale(1 0.001)"
+                />
+                <g
+                  class="highcharts-markers highcharts-series-1 highcharts-column-series highcharts-color-1"
+                  clip-path="none"
+                  data-z-index="0.1"
+                  opacity="1"
+                  transform="translate(10,0) scale(1 1)"
+                />
+                <g
+                  class="highcharts-series highcharts-series-2 highcharts-areaspline-series highcharts-navigator-series"
+                  clip-path="url(#highcharts-12-)"
+                  data-z-index="0.1"
+                  opacity="1"
+                  transform="translate(24,0) scale(1 1)"
+                >
+                  <path
+                    class="highcharts-area"
+                    d="M 0 0"
+                    data-z-index="0"
+                    fill="rgba(124,181,236,0.05)"
+                  />
+                </g>
+                <g
+                  class="highcharts-markers highcharts-series-2 highcharts-areaspline-series highcharts-navigator-series"
+                  clip-path="url(#highcharts-13-)"
+                  data-z-index="0.1"
+                  opacity="1"
+                  transform="translate(24,0) scale(1 1)"
+                />
+              </g>
+              <text
+                class="highcharts-title"
+                data-z-index="4"
+                style="color: rgb(51, 51, 51); font-size: 16px; fill: #333333;"
+                text-anchor="middle"
+                x="300"
+                y="22"
+              >
+                BH Stock Chart
+              </text>
+              <text
+                class="highcharts-subtitle"
+                data-z-index="4"
+                style="color: rgb(102, 102, 102); fill: #666666;"
+                text-anchor="middle"
+                x="300"
+                y="10"
+              />
+              <text
+                class="highcharts-caption"
+                data-z-index="4"
+                style="color: rgb(102, 102, 102); fill: #666666;"
+                text-anchor="start"
+                x="10"
+                y="397"
+              />
+              <g
+                class="highcharts-data-labels highcharts-series-2 highcharts-areaspline-series highcharts-navigator-series"
+                data-z-index="6"
+                opacity="1"
+                transform="translate(24,0) scale(1 1)"
+              />
+              <g
+                class="highcharts-axis-labels highcharts-xaxis-labels"
+                data-z-index="7"
+              />
+              <g
+                class="highcharts-axis-labels highcharts-xaxis-labels highcharts-navigator-xaxis"
+                data-z-index="7"
+              />
+              <g
+                class="highcharts-axis-labels highcharts-yaxis-labels"
+                data-z-index="7"
+              />
+              <g
+                class="highcharts-axis-labels highcharts-yaxis-labels"
+                data-z-index="7"
+              />
+              <g
+                class="highcharts-axis-labels highcharts-yaxis-labels highcharts-navigator-yaxis"
+                data-z-index="7"
+              />
+              <g
+                class="highcharts-range-selector-group"
+                data-z-index="7"
+                transform="translate(0,0)"
+              >
+                <g
+                  class="highcharts-range-selector-buttons"
+                  transform="translate(0,10)"
+                >
+                  <g
+                    class="highcharts-label"
+                    transform="translate(10,0)"
+                  >
+                    <text
+                      data-z-index="1"
+                      style="color: rgb(102, 102, 102); fill: #666666;"
+                      x="0"
+                      y="15.5"
+                    >
+                      Zoom
+                    </text>
+                  </g>
+                  <g
+                    class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
+                    data-z-index="7"
+                    style="cursor: pointer;"
+                    transform="translate(15,0)"
+                  >
+                    <title>
+                      View 1 month
+                    </title>
+                    <rect
+                      class="highcharts-button-box"
+                      fill="#f7f7f7"
+                      height="22"
+                      rx="2"
+                      ry="2"
+                      width="32"
+                      x="0"
+                      y="0"
+                    />
+                    <text
+                      data-z-index="1"
+                      style="color: rgb(51, 51, 51); font-weight: normal; fill: #333333;"
+                      x="NaN"
+                      y="15.5"
+                    >
+                      1m
+                    </text>
+                  </g>
+                  <g
+                    class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
+                    data-z-index="7"
+                    style="cursor: pointer;"
+                    transform="translate(52,0)"
+                  >
+                    <title>
+                      View 3 months
+                    </title>
+                    <rect
+                      class="highcharts-button-box"
+                      fill="#f7f7f7"
+                      height="22"
+                      rx="2"
+                      ry="2"
+                      width="32"
+                      x="0"
+                      y="0"
+                    />
+                    <text
+                      data-z-index="1"
+                      style="color: rgb(51, 51, 51); font-weight: normal; fill: #333333;"
+                      x="NaN"
+                      y="15.5"
+                    >
+                      3m
+                    </text>
+                  </g>
+                  <g
+                    class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
+                    data-z-index="7"
+                    style="cursor: pointer;"
+                    transform="translate(89,0)"
+                  >
+                    <title>
+                      View 6 months
+                    </title>
+                    <rect
+                      class="highcharts-button-box"
+                      fill="#f7f7f7"
+                      height="22"
+                      rx="2"
+                      ry="2"
+                      width="32"
+                      x="0"
+                      y="0"
+                    />
+                    <text
+                      data-z-index="1"
+                      style="color: rgb(51, 51, 51); font-weight: normal; fill: #333333;"
+                      x="NaN"
+                      y="15.5"
+                    >
+                      6m
+                    </text>
+                  </g>
+                  <g
+                    class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
+                    data-z-index="7"
+                    style="cursor: pointer;"
+                    transform="translate(126,0)"
+                  >
+                    <title>
+                      View year to date
+                    </title>
+                    <rect
+                      class="highcharts-button-box"
+                      fill="#f7f7f7"
+                      height="22"
+                      rx="2"
+                      ry="2"
+                      width="32"
+                      x="0"
+                      y="0"
+                    />
+                    <text
+                      data-z-index="1"
+                      style="color: rgb(51, 51, 51); font-weight: normal; fill: #333333;"
+                      x="NaN"
+                      y="15.5"
+                    >
+                      YTD
+                    </text>
+                  </g>
+                  <g
+                    class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
+                    data-z-index="7"
+                    style="cursor: pointer;"
+                    transform="translate(163,0)"
+                  >
+                    <title>
+                      View 1 year
+                    </title>
+                    <rect
+                      class="highcharts-button-box"
+                      fill="#f7f7f7"
+                      height="22"
+                      rx="2"
+                      ry="2"
+                      width="32"
+                      x="0"
+                      y="0"
+                    />
+                    <text
+                      data-z-index="1"
+                      style="color: rgb(51, 51, 51); font-weight: normal; fill: #333333;"
+                      x="NaN"
+                      y="15.5"
+                    >
+                      1y
+                    </text>
+                  </g>
+                  <g
+                    class="highcharts-no-tooltip highcharts-button highcharts-button-normal"
+                    data-z-index="7"
+                    style="cursor: pointer;"
+                    transform="translate(200,0)"
+                  >
+                    <title>
+                      View all
+                    </title>
+                    <rect
+                      class="highcharts-button-box"
+                      fill="#f7f7f7"
+                      height="22"
+                      rx="2"
+                      ry="2"
+                      width="32"
+                      x="0"
+                      y="0"
+                    />
+                    <text
+                      data-z-index="1"
+                      style="color: rgb(51, 51, 51); font-weight: normal; fill: #333333;"
+                      x="NaN"
+                      y="15.5"
+                    >
+                      All
+                    </text>
+                  </g>
+                </g>
+                <g
+                  class="highcharts-input-group"
+                  transform="translate(588,10)"
+                >
+                  <g
+                    class="highcharts-label highcharts-range-label"
+                    transform="translate(0,0)"
+                  >
+                    <text
+                      data-z-index="1"
+                      style="color: rgb(102, 102, 102); font-family: \\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Arial, Helvetica, sans-serif; font-size: 12px; fill: #666666;"
+                      x="0"
+                      y="12"
+                    >
+                      
+                    </text>
+                  </g>
+                  <g
+                    class="highcharts-label highcharts-range-input"
+                    style="cursor: pointer;"
+                    transform="translate(0,0)"
+                  >
+                    <rect
+                      class="highcharts-label-box"
+                      fill="none"
+                      height="21"
+                      stroke="none"
+                      stroke-width="1"
+                      width="4"
+                      x="0.5"
+                      y="0.5"
+                    />
+                    <text
+                      data-z-index="1"
+                      style="color: rgb(51, 92, 173); font-family: \\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Arial, Helvetica, sans-serif; font-size: 12px; fill: #335cad;"
+                      x="2"
+                      y="15"
+                    >
+                      
+                    </text>
+                  </g>
+                  <g
+                    class="highcharts-label highcharts-range-label"
+                    transform="translate(9,0)"
+                  >
+                    <text
+                      data-z-index="1"
+                      style="color: rgb(102, 102, 102); font-family: \\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Arial, Helvetica, sans-serif; font-size: 12px; fill: #666666;"
+                      x="2"
+                      y="15"
+                    >
+                      →
+                    </text>
+                  </g>
+                  <g
+                    class="highcharts-label highcharts-range-input"
+                    style="cursor: pointer;"
+                    transform="translate(18,0)"
+                  >
+                    <rect
+                      class="highcharts-label-box"
+                      fill="none"
+                      height="21"
+                      stroke="none"
+                      stroke-width="1"
+                      width="4"
+                      x="0.5"
+                      y="0.5"
+                    />
+                    <text
+                      data-z-index="1"
+                      style="color: rgb(51, 92, 173); font-family: \\"Lucida Grande\\", \\"Lucida Sans Unicode\\", Arial, Helvetica, sans-serif; font-size: 12px; fill: #335cad;"
+                      x="2"
+                      y="15"
+                    >
+                      
+                    </text>
+                  </g>
+                </g>
+              </g>
+              <g
+                class="highcharts-navigator"
+                data-z-index="8"
+                visibility="hidden"
+              >
+                <rect
+                  class="highcharts-navigator-mask-outside"
+                  fill="rgba(0,0,0,0)"
+                />
+                <rect
+                  class="highcharts-navigator-mask-inside"
+                  fill="rgba(102,133,194,0.3)"
+                  style="cursor: ew-resize;"
+                />
+                <rect
+                  class="highcharts-navigator-mask-outside"
+                  fill="rgba(0,0,0,0)"
+                />
+                <path
+                  class="highcharts-navigator-outline"
+                  fill="none"
+                  stroke="#cccccc"
+                  stroke-width="1"
+                />
+                <path
+                  class="highcharts-navigator-handle highcharts-navigator-handle-right"
+                  d="M -4.5 0.5 L 3.5 0.5 L 3.5 15.5 L -4.5 15.5 L -4.5 0.5 M -1.5 4 L -1.5 12 M 0.5 4 L 0.5 12"
+                  data-z-index="6"
+                  fill="#f2f2f2"
+                  stroke="#999999"
+                  stroke-width="1"
+                  style="cursor: ew-resize;"
+                />
+                <path
+                  class="highcharts-navigator-handle highcharts-navigator-handle-left"
+                  d="M -4.5 0.5 L 3.5 0.5 L 3.5 15.5 L -4.5 15.5 L -4.5 0.5 M -1.5 4 L -1.5 12 M 0.5 4 L 0.5 12"
+                  data-z-index="7"
+                  fill="#f2f2f2"
+                  stroke="#999999"
+                  stroke-width="1"
+                  style="cursor: ew-resize;"
+                />
+              </g>
+              <text
+                class="highcharts-credits"
+                data-z-index="8"
+                style="cursor: pointer; color: rgb(153, 153, 153); font-size: 9px; fill: #999999;"
+                text-anchor="end"
+                x="590"
+                y="395"
+              >
+                Highcharts.com
+              </text>
+            </svg>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
