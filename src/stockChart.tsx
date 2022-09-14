@@ -1,6 +1,6 @@
 import Highcharts from 'highcharts/highstock';
 import HighchartsReact from 'highcharts-react-official';
-import { 
+import {
     IDataItemResult,
     IDataRangeQuery,
     useData
@@ -20,7 +20,7 @@ function createOptions(data: Array<IDataItemResult>) {
             {
                 type: 'ohlc',
                 name: 'OHLC',
-                data: toSeries<IDataItemResult>(data, [ 
+                data: toSeries(data, [ 
                     'date',
                     'open',
                     'high',
@@ -31,7 +31,7 @@ function createOptions(data: Array<IDataItemResult>) {
             {
                 type: 'column',
                 name: 'Volume',
-                data: toSeries<IDataItemResult>(data, [
+                data: toSeries(data, [
                     'date',
                     'volume'
                 ]),
@@ -64,7 +64,10 @@ function createOptions(data: Array<IDataItemResult>) {
             top: '80%',
             height: '20%',
             offset: 0
-        }]
+        }],
+        accessibility: {
+            enabled: false
+        }
     };
 }
 
@@ -78,7 +81,6 @@ export const StockChart = (props: IStockChartProps) => {
             highcharts={Highcharts}
             constructorType="stockChart"
             options={createOptions(data)}
-            
         />
     )
 };

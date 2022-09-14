@@ -1,9 +1,7 @@
 import {
     useState,
-    FormEvent,
-    ChangeEvent
+    FormEvent
 } from 'react';
-import { debounce } from 'lodash';
 import './App.css';
 import { StockChart } from './stockChart';
 import { toDateString } from './utils/toDateString';
@@ -24,16 +22,6 @@ function App() {
         });
     }
 
-    const handleLeftRange = debounce(
-        (ev: ChangeEvent<HTMLInputElement>) => {
-            setLeftRange(toDateString(ev.target.value))
-        }, 400);
-
-    const handleRightRange = debounce(
-        (ev: ChangeEvent<HTMLInputElement>) => {
-            setRightRange(toDateString(ev.target.value))
-        }, 400);
-
     return (
         <div className="App">
             <header className="App-header">
@@ -45,12 +33,12 @@ function App() {
                         <input
                             type="date"
                             required={true}
-                            onChange={(ev) => handleLeftRange(ev)}
+                            onChange={(ev) => setLeftRange(toDateString(ev.target.value))}
                         /> - 
                         <input
                             type="date"
                             required={true}
-                            onChange={(ev) => handleRightRange(ev)}
+                            onChange={(ev) => setRightRange(toDateString(ev.target.value))}
                         />
                         <button type="submit">Fetch</button>
                     </form>
