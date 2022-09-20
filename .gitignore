@@ -1,0 +1,12 @@
+// deps
+node_modules
+
+// artefacts
+build
+coverage
+
+// editor stuff
+.vscode
+
+// system stuff
+.DS_Store
