@@ -1,6 +1,7 @@
 {
   "name": "bh_temp",
   "version": "0.1.0",
+  "homepage": "https://op1ekun.github.io/bh/",
   "private": true,
   "dependencies": {
     "highcharts": "^10.2.1",
