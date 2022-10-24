@@ -11,7 +11,9 @@ function App() {
         leftRange: '',
         rightRange: ''
     });
+    const [ leftDateString, setLeftDateString ] = useState('');
     const [ leftRange, setLeftRange ] = useState('');
+    const [ rightDateString, setRightDateString ] = useState('');
     const [ rightRange, setRightRange ] = useState('');
 
     function handleSubmit(ev: FormEvent<HTMLFormElement>) {
@@ -25,20 +27,30 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                {`BH Homework displaying chart for range: "${leftRange}-${rightRange}"`}
+                <h1>BH Homework</h1>
+                <p>{ leftRange && rightRange ?
+                    `BH Homework displaying chart for range: "${leftRange}-${rightRange}"` : ''}</p>
             </header>
             <main>
                 <div>
                     <form onSubmit={handleSubmit}>
                         <input
                             type="date"
+                            max={rightDateString}
                             required={true}
-                            onChange={(ev) => setLeftRange(toDateString(ev.target.value))}
+                            onChange={(ev) => {
+                                setLeftDateString(ev.target.value);
+                                setLeftRange(toDateString(ev.target.value))
+                            }}
                         /> - 
                         <input
                             type="date"
                             required={true}
-                            onChange={(ev) => setRightRange(toDateString(ev.target.value))}
+                            min={leftDateString}
+                            onChange={(ev) => {
+                                setRightDateString(ev.target.value);
+                                setRightRange(toDateString(ev.target.value));
+                            }}
                         />
                         <button type="submit">Fetch</button>
                     </form>
