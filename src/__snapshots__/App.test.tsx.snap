@@ -11,17 +11,22 @@ Object {
         <header
           class="App-header"
         >
-          BH Homework displaying chart for range: "-"
+          <h1>
+            BH Homework
+          </h1>
+          <p />
         </header>
         <main>
           <div>
             <form>
               <input
+                max=""
                 required=""
                 type="date"
               />
                -
               <input
+                min=""
                 required=""
                 type="date"
               />
@@ -793,17 +798,22 @@ Object {
       <header
         class="App-header"
       >
-        BH Homework displaying chart for range: "-"
+        <h1>
+          BH Homework
+        </h1>
+        <p />
       </header>
       <main>
         <div>
           <form>
             <input
+              max=""
               required=""
               type="date"
             />
              -
             <input
+              min=""
               required=""
               type="date"
             />
