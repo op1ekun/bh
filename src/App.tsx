@@ -1,6 +1,8 @@
 import {
     useState,
-    FormEvent
+    FormEvent,
+    useRef,
+    useEffect
 } from 'react';
 import './App.css';
 import { StockChart } from './stockChart';
@@ -15,6 +17,14 @@ function App() {
     const [ leftRange, setLeftRange ] = useState('');
     const [ rightDateString, setRightDateString ] = useState('');
     const [ rightRange, setRightRange ] = useState('');
+
+    const leftPicker = useRef<HTMLInputElement>(null);
+
+    useEffect(() => {
+        if (leftPicker.current) {
+            leftPicker.current.focus();
+        }
+    }, []);
 
     function handleSubmit(ev: FormEvent<HTMLFormElement>) {
         ev.preventDefault();
@@ -37,6 +47,7 @@ function App() {
                         <input
                             type="date"
                             max={rightDateString}
+                            ref={leftPicker}
                             required={true}
                             onChange={(ev) => {
                                 setLeftDateString(ev.target.value);
