@@ -6,7 +6,7 @@ import App from './App';
 describe('App', () => {
     test('renders App in initial state', () => {
         const { getByText } = render(<App />);
-        expect(getByText('BH Homework displaying chart for range: "-"')).toBeInTheDocument();
+        expect(getByText('BH Homework')).toBeInTheDocument();
     });
 
     test('matches snapshot', () => {
